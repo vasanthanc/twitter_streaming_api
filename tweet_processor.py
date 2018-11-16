@@ -136,7 +136,9 @@ class TweetProcessor ():
         data_hash = self.data_frame.to_dict ('records')
         for data_information in data_hash:
             if 'text' in data_information:
-                raw_text = data_information['text']
+                text = data_information['text']
+                # this is to skip urls from text
+                raw_text = re.sub (r'\w+:\/{2}[\d\w-]+(\.[\d\w-]+)*(?:(?:\/[^\s/]*))*', '', text, flags=re.MULTILINE)
                 tokens = nltk.word_tokenize (raw_text)
                 tagged = nltk.pos_tag (tokens)
                 for tag in tagged:
@@ -159,8 +161,8 @@ class TweetProcessor ():
 
 # if __name__ == '__main__':
 #     tweet = TweetProcessor()
-#     with open('sample_tweet.json') as f:
+#     with open('./twitter_streaming_api/sample_tweet.json') as f:
 #         tweet.tweet_data = load(f)
-# tweet.print_uniq_user_count()
-# tweet.print_domain_related_result()
+# # tweet.print_uniq_user_count()
+# # tweet.print_domain_related_result()
 # tweet.print_unique_words()
