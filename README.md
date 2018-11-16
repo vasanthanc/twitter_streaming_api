@@ -1,5 +1,4 @@
 # Twitter Streaming API
-exploring twitter streaming api
 
 This program will give you various reports for the given keyword.
 
@@ -143,8 +142,10 @@ Stopping stream.
 ---------------------------------------------------------------------------
 
 tweet_base is the initial point of the program.
-
-python ./tweet_base.py -h will give you help message.
+```
+python ./tweet_base.py -h 
+```
+will give you help message.
 
 before running this program, please install all the requirements in your system.
 
