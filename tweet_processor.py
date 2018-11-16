@@ -4,8 +4,8 @@ from urllib.parse import urlsplit
 import nltk
 import re
 
-# nltk.download('punkt')
-# nltk.download('averaged_perceptron_tagger')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 
 '''
 text processing algorithms are handled in this class
