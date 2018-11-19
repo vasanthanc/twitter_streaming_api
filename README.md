@@ -147,5 +147,4 @@ python ./tweet_base.py -h
 ```
 will give you help message.
 
-before running this program, please install all the requirements in your system.
-
+before running this program, please install all the requirements in your system and change the settings.py.
