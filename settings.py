@@ -4,11 +4,11 @@ application
 '''
 USER_KEY_VARIABLES = {
     'CONSUMER_VARIABLES': {
-        'CONSUMER_KEY': 'vna0nHFMGGPM5NuPEIfSrXYHP',
-        'CONSUMER_SECRET': 'a14vCrvPMzCiXNPy2gFGt51xLvnzcpJJ2Tskp85BKM0A2piDew'
+        'CONSUMER_KEY': '<>',
+        'CONSUMER_SECRET': '<>'
     },
     'ACCESS_VARIABLES': {
-        'ACCESS_TOKEN': '81850750-KwzXL3xDoGFj5zA0JqPXvOaf4iuvOeVPGYdUUTLo5',
-        'ACCESS_SECRET': 'phCrBsCKvxKnqWJVjj28tV4LTgz7KoB8IUWvRgag5qEoW'
+        'ACCESS_TOKEN': '<>',
+        'ACCESS_SECRET': '<>'
     }
 }
